@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuração da fonte base */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #f2f2f2f2;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Estilo do conteúdo principal */
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monitoramento {
+  width: 80%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.monitoramento h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.institution-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.institution-info img {
+  width: 100px;
+  height: 100px;
+}
+
+.institution-info p {
+  margin: 5px 0;
+}
+
+.monitoring-details {
+  margin-top: 20px;
+}
+
+.monitoring-details h2 {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.monitoring-section {
+  margin-bottom: 20px;
+}
+
+.monitoring-section h3 {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.monitoring-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.monitoring-section ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.save-back-button,
+.home-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #0056b3;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#bola {
+  background-color: f2f2f2f2;
+  border-radius: 100px;
+  width: 125px;
+  height: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

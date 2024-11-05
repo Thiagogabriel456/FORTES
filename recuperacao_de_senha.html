@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperação de Senha</title>
+    <link rel="stylesheet" href="./css/Instituicao/recuperação_de_senha.css" />
+  </head>
+  <body>
+    <div class="recovery-container">
+      <div class="recovery-box">
+        <div class="logo">
+          <img src="./images/FORTES_LOGOMARCA.png" alt="Fortes" />
+        </div>
+        <h2>Recuperação de Senha</h2>
+        <form id="recoveryForm">
+          <div class="input-group">
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo" name="codigo" required />
+            <button type="button" id="reenviar">REENVIAR</button>
+          </div>
+          <div class="input-group">
+            <label for="novaSenha">Nova senha:</label>
+            <input type="password" id="novaSenha" name="novaSenha" required />
+          </div>
+          <div class="input-group">
+            <label for="confirmaSenha">Confirme a senha:</label>
+            <input type="password" id="confirmaSenha" name="confirmaSenha" required />
+          </div>
+          <a href="./index.html"><button type="button">TROCAR SENHA</button></a>
+        </form>
+      </div>
+    </div>
+    <script src="./js/recuperaçao_de_senha.js"></script>
+  </body>
+</html>

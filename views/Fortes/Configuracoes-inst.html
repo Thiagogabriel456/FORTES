@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configurações do Usuário</title>
+    <link rel="stylesheet" href="../../css/Fortes/configuracoes-inst.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo" id="">
+        <img src="../../images/Juliana.png" alt="Ídolo Social" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Idade: 35</a></li>
+          <li><a href="#">Juliana Oliveira Dias</a></li>
+          <li><a href="#">job</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="menu">
+      <div class="arrow"></div>
+      <nav class="vertical-menu">
+        <a href="./Home.html"><i class="ph ph-house"></i>Home</a>
+        <a href="./Propostas.html"><i class="ph ph-file"></i>Propostas</a>
+        <a href="./Configuracoes-inst.html" id="menu-active"
+          ><i class="ph ph-gear"></i>Minha Conta</a
+        >
+      </nav>
+    </section>
+
+    <main>
+      <section class="configurations">
+        <h1>Configurações:</h1>
+
+        <div class="section">
+          <h2>Visual</h2>
+          <label for="font-size">Tamanho da fonte</label>
+          <select id="font-size">
+            <option value="small">Pequeno</option>
+            <option value="medium" selected>Médio</option>
+            <option value="large">Grande</option>
+          </select>
+
+          <label for="theme">Tema</label>
+          <select id="theme">
+            <option value="light">Claro</option>
+            <option value="dark">Escuro</option>
+            <option value="system" selected>Sistema</option>
+          </select>
+        </div>
+
+        <div class="section">
+          <h2>Notificações</h2>
+          <label for="push-notifications">Push</label>
+          <label class="switch">
+            <input checked="" type="checkbox" />
+            <div class="slider">
+              <div class="circle">
+                <svg
+                  class="cross"
+                  xml:space="preserve"
+                  style="enable-background: new 0 0 512 512"
+                  viewBox="0 0 365.696 365.696"
+                  y="0"
+                  x="0"
+                  height="6"
+                  width="6"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      data-original="#000000"
+                      fill="currentColor"
+                      d="M243.188 182.86 356.32 69.726c12.5-12.5 12.5-32.766 0-45.247L341.238 9.398c-12.504-12.503-32.77-12.503-45.25 0L182.86 122.528 69.727 9.374c-12.5-12.5-32.766-12.5-45.247 0L9.375 24.457c-12.5 12.504-12.5 32.77 0 45.25l113.152 113.152L9.398 295.99c-12.503 12.503-12.503 32.769 0 45.25L24.48 356.32c12.5 12.5 32.766 12.5 45.247 0l113.132-113.132L295.99 356.32c12.503 12.5 32.769 12.5 45.25 0l15.081-15.082c12.5-12.504 12.5-32.77 0-45.25zm0 0"
+                    ></path>
+                  </g>
+                </svg>
+                <svg
+                  class="checkmark"
+                  xml:space="preserve"
+                  style="enable-background: new 0 0 512 512"
+                  viewBox="0 0 24 24"
+                  y="0"
+                  x="0"
+                  height="10"
+                  width="10"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      class=""
+                      data-original="#000000"
+                      fill="currentColor"
+                      d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </label>
+
+          <label for="email-notifications">Email</label>
+          <label class="switch">
+            <input checked="" type="checkbox" />
+            <div class="slider">
+              <div class="circle">
+                <svg
+                  class="cross"
+                  xml:space="preserve"
+                  style="enable-background: new 0 0 512 512"
+                  viewBox="0 0 365.696 365.696"
+                  y="0"
+                  x="0"
+                  height="6"
+                  width="6"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      data-original="#000000"
+                      fill="currentColor"
+                      d="M243.188 182.86 356.32 69.726c12.5-12.5 12.5-32.766 0-45.247L341.238 9.398c-12.504-12.503-32.77-12.503-45.25 0L182.86 122.528 69.727 9.374c-12.5-12.5-32.766-12.5-45.247 0L9.375 24.457c-12.5 12.504-12.5 32.77 0 45.25l113.152 113.152L9.398 295.99c-12.503 12.503-12.503 32.769 0 45.25L24.48 356.32c12.5 12.5 32.766 12.5 45.247 0l113.132-113.132L295.99 356.32c12.503 12.5 32.769 12.5 45.25 0l15.081-15.082c12.5-12.504 12.5-32.77 0-45.25zm0 0"
+                    ></path>
+                  </g>
+                </svg>
+                <svg
+                  class="checkmark"
+                  xml:space="preserve"
+                  style="enable-background: new 0 0 512 512"
+                  viewBox="0 0 24 24"
+                  y="0"
+                  x="0"
+                  height="10"
+                  width="10"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      class=""
+                      data-original="#000000"
+                      fill="currentColor"
+                      d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="section">
+          <h2>Atalhos</h2>
+          <div class="shortcuts">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#fff"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"
+                ></path>
+              </svg>
+              <h3>Home</h3>
+              <input type="text" placeholder="Ctrl + 1" />
+            </button>
+
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#fff"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"
+                ></path>
+              </svg>
+              <h3>Proposta</h3>
+              <input type="text" placeholder="Ctrl + 2" />
+            </button>
+
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#fff"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm109.94-52.79a8,8,0,0,0-3.89-5.4l-29.83-17-.12-33.62a8,8,0,0,0-2.83-6.08,111.91,111.91,0,0,0-36.72-20.67,8,8,0,0,0-6.46.59L128,41.85,97.88,25a8,8,0,0,0-6.47-.6A112.1,112.1,0,0,0,54.73,45.15a8,8,0,0,0-2.83,6.07l-.15,33.65-29.83,17a8,8,0,0,0-3.89,5.4,106.47,106.47,0,0,0,0,41.56,8,8,0,0,0,3.89,5.4l29.83,17,.12,33.62a8,8,0,0,0,2.83,6.08,111.91,111.91,0,0,0,36.72,20.67,8,8,0,0,0,6.46-.59L128,214.15,158.12,231a7.91,7.91,0,0,0,3.9,1,8.09,8.09,0,0,0,2.57-.42,112.1,112.1,0,0,0,36.68-20.73,8,8,0,0,0,2.83-6.07l.15-33.65,29.83-17a8,8,0,0,0,3.89-5.4A106.47,106.47,0,0,0,237.94,107.21Zm-15,34.91-28.57,16.25a8,8,0,0,0-3,3c-.58,1-1.19,2.06-1.81,3.06a7.94,7.94,0,0,0-1.22,4.21l-.15,32.25a95.89,95.89,0,0,1-25.37,14.3L134,199.13a8,8,0,0,0-3.91-1h-.19c-1.21,0-2.43,0-3.64,0a8.08,8.08,0,0,0-4.1,1l-28.84,16.1A96,96,0,0,1,67.88,201l-.11-32.2a8,8,0,0,0-1.22-4.22c-.62-1-1.23-2-1.8-3.06a8.09,8.09,0,0,0-3-3.06l-28.6-16.29a90.49,90.49,0,0,1,0-28.26L61.67,97.63a8,8,0,0,0,3-3c.58-1,1.19-2.06,1.81-3.06a7.94,7.94,0,0,0,1.22-4.21l.15-32.25a95.89,95.89,0,0,1,25.37-14.3L122,56.87a8,8,0,0,0,4.1,1c1.21,0,2.43,0,3.64,0a8.08,8.08,0,0,0,4.1-1l28.84-16.1A96,96,0,0,1,188.12,55l.11,32.2a8,8,0,0,0,1.22,4.22c.62,1,1.23,2,1.8,3.06a8.09,8.09,0,0,0,3,3.06l28.6,16.29A90.49,90.49,0,0,1,222.9,142.12Z"
+                ></path>
+              </svg>
+              <h3>Minhas Conta</h3>
+              <input type="text" placeholder="Ctrl + 3" />
+            </button>
+            <button>
+              <h3>Mostrar/Esconder Menu</h3>
+              <input type="text" placeholder="Tab" />
+            </button>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Segurança</h2>
+          <div id="seguranca" class="shortcuts">
+            <a href="../../recuperacao_de_senha.html"><button>Alterar Senha</button></a>
+            <button>Ajuda</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Rodapé</p>
+    </footer>
+  </body>
+</html>

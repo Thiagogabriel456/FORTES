@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  color: black;
+}
+
+header .logo img {
+  height: 40px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.proponente,
+.cronograma {
+  margin-bottom: 20px;
+}
+
+.proponente h1,
+.cronograma h1 {
+  background-color: #0044cc;
+  color: white;
+  padding: 10px;
+  margin: 0 -20px 20px -20px;
+}
+
+.section-content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.box {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.box h2 {
+  margin-top: 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0044cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003399;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+footer {
+  background-color: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.datas {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  flex-direction: column;
+  width: 250px;
+}
+
+.datas .h1 {
+  margin: 0;
+  height: 30px;
+  border-radius: 10px 10px 0 0;
+}
+
+input {
+  font-size: xx-large;
+  border-radius: 0 0 10px 10px;
+}
+
+#bola {
+  background-color: white;
+  border-radius: 100px;
+  width: 125px;
+  height: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

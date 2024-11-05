@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Instituição</title>
+    <link rel="stylesheet" href="../../css/Fortes/Cadastro-Inst.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../../images/FORTES_LOGOMARCA.png" alt="Fortes Engenharia" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">A Fortes</a></li>
+          <li><a href="#">Setores de Atuação</a></li>
+          <li><a href="#">Soluções Fortes</a></li>
+          <li><a href="#">Integridade</a></li>
+          <li><a href="#">InovaFortes</a></li>
+          <li><a href="#">Notícias</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="edit-institution">
+        <h1>Alterar dados</h1>
+        <div class="tabs">
+          <button class="tab active" id="tab-institution" onclick="showTab('institution')">
+            Instituição
+          </button>
+          <a href="./Cadastro-R_Legal.html"><button class="tab" id="tab-legal">R. Legal</button></a>
+          <a href="./Cadastro-R_tecnico.html"
+            ><button class="tab" id="tab-technical" onclick="showTab('technical')">
+              R. Técnico
+            </button></a
+          >
+        </div>
+        <div id="institution" class="tab-content active">
+          <h2>Alterar dados da sua Instituição</h2>
+          <form class="form">
+            <div class="form-group">
+              <label for="cnpj">CNPJ</label>
+              <input type="text" id="cnpj" placeholder="12.345.678/0001-00" disabled />
+            </div>
+            <div class="form-group">
+              <label for="logradouro">Logradouro</label>
+              <input type="text" id="logradouro" placeholder="Rua exemplo" disabled />
+            </div>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Nome da instituição" disabled />
+            </div>
+            <div class="form-group">
+              <label for="site">Sítio eletrônico</label>
+              <input type="text" id="site" placeholder="www.exemplo.com" disabled />
+            </div>
+            <div class="form-group">
+              <label for="telefone1">Telefone 1</label>
+              <input type="text" id="telefone1" placeholder="(00) 0000-0000" disabled />
+            </div>
+            <div class="form-group">
+              <label for="telefone2">Telefone 2</label>
+              <input type="text" id="telefone2" placeholder="(00) 0000-0000" disabled />
+            </div>
+            <div class="form-group">
+              <label for="email">Email da organização</label>
+              <input type="email" id="email" placeholder="email@exemplo.com" disabled />
+            </div>
+            <div class="form-group">
+              <label for="area-atuacao">Área de atuação</label>
+              <select id="area-atuacao">
+                <option disabled value="administracao">Administração</option>
+                <!-- Adicione outras opções conforme necessário -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bairro">Bairro</label>
+              <input type="text" id="bairro" placeholder="Bairro exemplo" disabled />
+            </div>
+            <div class="form-group">
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" placeholder="00000-000" disabled />
+            </div>
+            <div class="form-group">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" placeholder="Cidade exemplo" disabled />
+            </div>
+            <div class="button-container">
+              <a href="./Aprovação-Inst.html">
+                <button type="button" class="back-button" onclick="showTab('institution')">
+                  Voltar
+                </button></a
+              >
+              <a href="./Cadastro-R_Legal.html"
+                ><button type="button" class="next-button">Avançar</button></a
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function showTab(tabId) {
+        const tabs = document.querySelectorAll(".tab")
+        const contents = document.querySelectorAll(".tab-content")
+
+        tabs.forEach((tab) => {
+          tab.classList.remove("active")
+        })
+
+        contents.forEach((content) => {
+          content.classList.remove("active")
+        })
+
+        document.getElementById(tabId).classList.add("active")
+        document.getElementById("tab-" + tabId).classList.add("active")
+      }
+    </script>
+  </body>
+</html>

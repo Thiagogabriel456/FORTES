@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid black;
+}
+
+header .logo img {
+  height: 40px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu {
+  position: fixed;
+  left: -250px;
+  transition: 0.5s;
+  top: 160px;
+  background: none;
+}
+
+.menu:hover {
+  left: 10px;
+  transition: 0.5s;
+}
+
+#menu-active {
+  background: #14488c;
+  color: white;
+}
+
+.vertical-menu {
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vertical-menu a {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #000;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+.vertical-menu a i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.vertical-menu a:hover {
+  text-decoration: underline;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  background-color: #3b82f6;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  right: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.arrow:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid white;
+  transform: rotate(225deg);
+  display: block;
+}
+
+main {
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 5px;
+}
+
+.proposals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.proposal-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.proposal-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #00284d;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#bola {
+  background-color: white;
+  border-radius: 100px;
+  width: 125px;
+  height: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

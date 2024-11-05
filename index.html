@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/Instituicao/login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-box">
+        <div class="logo">
+          <img src="./images/FORTES_LOGOMARCA.png" alt="Fortes" />
+        </div>
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="login">Informe seu login:</label>
+            <input type="email" id="login" name="login" required />
+          </div>
+          <div class="input-group">
+            <label for="senha">Informe sua senha:</label>
+            <input type="password" id="senha" name="senha" required />
+          </div>
+          <div class="input-group">
+            <a href="./recuperacao_de_senha.html" id="forgotPassword">Esqueci minha senha</a>
+          </div>
+          <a href="./views/Instituicao/Home-inst.html"
+            ><button type="button">ENTRAR Inst.</button></a
+          >
+          <a href="./views/Fortes/Home.html"><button type="button">ENTRAR Fortes</button></a>
+        </form>
+      </div>
+    </div>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
